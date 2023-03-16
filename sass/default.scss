@@ -1,0 +1,16 @@
+$primary: #F2EA0A;
+$btn-border-radius: 0px;
+
+@import './node_modules/bootstrap/scss/bootstrap';
+
+html {
+  display: block;
+	text-align: center;
+}
+
+.nav-link {
+  &.active {
+	border-bottom: 2px solid $secondary;
+	margin: auto;
+  }
+}
