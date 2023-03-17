@@ -11190,10 +11190,6 @@ header nav .nav-link.active {
 	border-bottom: 2px solid #006C94;
 }
 
-section .icon-check {
-	max-height: 30px;
-}
-
 section .circle {
 	width: 75%;
 	max-height: 428px;
@@ -11206,13 +11202,42 @@ section .circle .vaha {
 	width: 100%;
 }
 
-section .section-title-border {
+section .icon-check {
+	max-height: 30px;
+}
+
+section #flush-headingTwo {
+	color: black;
+	opacity: 100%;
+}
+
+section .accordion-header {
+	opacity: 80%;
+	border: none;
+}
+
+section .accordion-item {
+	margin-bottom: 2px;
+	color: black;
+}
+
+section .accordion-button:focus {
+	border: none;
+}
+
+section .accordion-button:not(.collapsed) {
+	background-color: white;
+	color: black;
+	opacity: 100%;
+}
+
+.section-title-border {
 	border-bottom: 6px solid;
 	max-width: 60px;
 	margin: auto;
 }
 
-section .section-title-border.success-green {
+.section-title-border.success-green {
 	color: #95C63F;
 }
 

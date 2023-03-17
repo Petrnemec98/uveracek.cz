@@ -66,9 +66,6 @@ header {
 }
 
 section{
-	.icon-check{
-	  max-height: 30px;
-	}
   .circle {
 	width: 75%;
 	max-height: 428px;
@@ -79,6 +76,32 @@ section{
 	  width: 100%;
 	}
   }
+	.icon-check{
+	  max-height: 30px;
+	}
+   #flush-headingTwo {
+	 color: black;
+	 opacity: 100%;
+   }
+  	.accordion-header{
+	  opacity: 80%;
+	  border: none;
+	}
+  	.accordion-item {
+	  margin-bottom: 2px;
+	  color: black;
+
+	}
+  	.accordion-button:focus {
+	  border: none;
+	}
+	.accordion-button:not(.collapsed){
+	  background-color: white;
+	  color: black;
+	  opacity: 100%;
+	}
+
+  }
   .section-title-border{
 	border-bottom: 6px solid ;
 	max-width: 60px;
@@ -87,7 +110,7 @@ section{
 	  color: $success;
 	}
   }
-}
+
 
   .contact-bar.container-fluid{
 	grid-area: 1 / 1 / 2 / 2;
