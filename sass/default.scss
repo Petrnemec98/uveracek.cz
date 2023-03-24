@@ -169,7 +169,26 @@ footer{
   }
 }
 
-
+.how-works-section{
+  img{
+	width: 100%;
+	max-height: 150px;
+  }
+}
+.first-section{
+  img.wallet{
+	max-width: 100%;
+	z-index: 10;
+	position: absolute;
+	transform: translateX(-50%)
+  }
+}
+img.vaha{
+  max-width: 100%;
+  z-index: 10;
+  position: absolute;
+  transform: translateX(-50%)
+}
 
 @media (min-width: 992px){
   .navbar-collapse{
@@ -184,6 +203,27 @@ footer{
   }
   .navbar .container-fluid{
 	justify-content: flex-end;
+  }
+  .how-works-section{
+	img{
+	  width: 25%;
+	  max-height: 50px;
+	}
+  }
+  .first-section{
+	img.wallet{
+	  position: relative;
+	  max-width: 100%;
+	  z-index: 10;
+	  transform: translateX(0%);
+	  margin-bottom:-50px
+	}
+  }
+  img.vaha{
+	position: relative;
+	max-width: 100%;
+	z-index: 10;
+	transform: translateX(0%);
   }
 
 
