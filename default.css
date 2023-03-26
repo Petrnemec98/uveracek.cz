@@ -11170,25 +11170,43 @@ body {
 	font-family: 'segoe_ui';
 }
 
-.text-gray {
-	color: #C8C8C8;
-}
-
 header {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
+	background-color: white;
+	z-index: 11;
+	width: 100%;
+	top: 0;
 }
 
 header nav {
 	grid-area: 2 / 1 / 3 / 2;
 }
 
+header nav .img {
+	height: 41.3px;
+}
+
 header nav .nav-link.active {
 	font-weight: 700;
 	color: #006C94;
 	border-bottom: 2px solid #006C94;
+}
+
+section.bg-gradient-1 {
+	background: #008aa1;
+	background: linear-gradient(45deg, #008aa1 0%, #007ba8 100%);
+}
+
+section.bg-gradient-2 {
+	background: #007ba8;
+	background: linear-gradient(93deg, #007ba8 0%, #008aa1 100%);
+}
+
+section.bg-gradient-2 .card {
+	background-color: transparent;
 }
 
 section .circle {
@@ -11247,6 +11265,65 @@ section .accordion-button:not(.collapsed):after {
 	background-image: var(--bs-accordion-btn-icon);
 }
 
+section .round-image {
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 50%;
+	max-width: 95px;
+	min-width: 95px;
+	height: 95px;
+	margin-right: 16px;
+}
+
+section .round-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+section .splide__pagination__page {
+	background-color: #DBDBDB;
+	width: 14px;
+	height: 15px;
+	border-radius: 50%;
+	border: none;
+	margin: 0 16px;
+}
+
+section .splide__pagination__page.is-active {
+	width: 18px;
+	height: 18px;
+	background-color: #006C94;
+}
+
+section .splide__arrows {
+	justify-content: center;
+}
+
+section .splide__arrow {
+	border: none;
+	background: transparent;
+}
+
+section .max-width {
+	max-width: 935px;
+	margin: auto;
+}
+
+section .button-box {
+	display: flex;
+	margin: 5rem auto;
+	justify-content: center;
+}
+
+section .button-box button {
+	margin: 0px 5px;
+}
+
+section .button-box button .btn {
+	padding: 14px 25px;
+}
+
 .section-title-border {
 	border-bottom: 6px solid;
 	max-width: 60px;
@@ -11255,6 +11332,16 @@ section .accordion-button:not(.collapsed):after {
 
 .section-title-border.success-green {
 	color: #95C63F;
+}
+
+.section-title-border-2 {
+	border-bottom: 6px solid;
+	max-width: 60px;
+}
+
+.section-title-border-2.secondary {
+	color: #007BA8;
+	margin: none;
 }
 
 .contact-bar.container-fluid, .contact-bar.container-sm, .contact-bar.container-md, .contact-bar.container-lg, .contact-bar.container-xl, .contact-bar.container-xxl {
@@ -11277,7 +11364,7 @@ footer p {
 }
 
 .btn {
-	padding: 14px 30px;
+	padding: 15px 20px;
 }
 
 .btn.btn-primary {
@@ -11316,6 +11403,10 @@ footer p {
 	max-width: 105px;
 }
 
+.first-section {
+	margin-top: 118px;
+}
+
 .first-section img.wallet {
 	max-width: 100%;
 	z-index: 10;
@@ -11340,12 +11431,33 @@ img.vaha {
 	header {
 		grid-template-rows: repeat(1, 1fr);
 	}
+	header nav .navbar {
+		--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23006C94' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	}
+	header nav .nav-link.active {
+		max-width: 140px;
+		margin: auto;
+	}
+	header nav img {
+		max-height: 23px;
+		top: 12px;
+	}
+	header nav i {
+		font-size: 1rem;
+	}
+	header nav .navbar-toggler-icon {
+		font-size: 1rem;
+		border: none;
+	}
 	.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
 		justify-content: flex-end;
 	}
 	.how-works-section img {
 		width: 25%;
 		max-width: 65px;
+	}
+	.first-section {
+		margin-top: 59.11px;
 	}
 	.first-section img.wallet {
 		position: relative;
@@ -11359,6 +11471,27 @@ img.vaha {
 		max-width: 100%;
 		z-index: 10;
 		transform: translateX(0%);
+	}
+	section .grid-box {
+		grid-area: 2 / 1 / 3 / 2;
+	}
+	section .round-image {
+		margin: auto;
+	}
+	section .splide__pagination__page {
+		width: 11px;
+		height: 11px;
+		margin: 0 10px;
+	}
+	section .splide__pagination__page.is-active {
+		width: 15px;
+		height: 15px;
+	}
+	section button {
+		width: 50%;
+	}
+	.section-title-border-2 {
+		margin: auto;
 	}
 }
 

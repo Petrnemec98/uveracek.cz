@@ -14,9 +14,11 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 	/>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body >
-<header>
+<header class="position-fixed">
 
 	<nav class="navbar navbar-expand-lg bg-body-tertiary container-xxl">
 		<img class="position-absolute start-0 ms-3" src="assetes/images/color-logo.svg" alt="white-logo" />
@@ -30,22 +32,22 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" href="#">Domů</a>
+							<a class="nav-link active" href="#domu">Domů</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Jak to funguje</a>
+							<a class="nav-link" href="#jak-to-funguje">Jak to funguje</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Komu půjčuji</a>
+							<a class="nav-link" href="#komu-pujcit">Komu půjčuji</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Zkušenosti</a>
+							<a class="nav-link" href="#zkusenosti">Zkušenosti</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Dotazy</a>
+							<a class="nav-link" href="#dotazy">Dotazy</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Kontakt</a>
+							<a class="nav-link" href="#kontakty">Kontakt</a>
 						</li>
 					</ul>
 				</div>
@@ -70,9 +72,9 @@
 </header>
 
 <!--Získejte 5 000 až 100 000 Kč-->
-<section class="container-fluid bg-secondary first-section">
-	<div class="row container-xxl m-auto">
-		<div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-3 mb-3 mt-md-5 mb-md-5 position-relative">
+<section id="domu" class="container-fluid bg-gradient-1 first-section">
+	<div class="row container-xxl m-auto d-grid d-md-flex">
+		<div class="grid-box col-12 col-sm-12 col-md-6 col-lg-6 mt-3 mb-3 mt-md-5 mb-md-5 position-relative">
 			<div class="d-block w-100">
 				<img class="wallet" src="assetes/images/wallet-intro.svg">
 			</div>
@@ -105,7 +107,7 @@
 
 
 <!--Jak úvěráček funguje-->
-<section class="container-fluid">
+<section id="jak-to-funguje" class="container-fluid">
 	<div class="row container-xxl m-auto">
 		<div class="card border-0">
 			<div class="card-body mt-3">
@@ -142,20 +144,23 @@
 						</div>
 					</div>
 				</div>
-				<button type="button" class="btn btn-primary mt-5 mb-5"><a href="#" class="text-dark">Chci si půjčit</a></button>
-				<button type="button" class="btn btn-secondary mt-5 mb-5"><a href="#">Zavolej mi</a></button>
+				<div class="button-box">
+					<button type="button" class="btn btn-primary"><a href="#" class="text-dark">Chci si půjčit</a></button>
+					<button type="button" class="btn btn-secondary"><a href="#">Zavolej mi</a></button>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!--Úvěráček půjčuje-->
-<section class="container-fluid bg-secondary">
-	<div class="row container-xxl m-auto">
-		<div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-3 mb-3 mt-md-5 mb-md-5">
-			<div class="card bg-secondary border-0">
+<section id="komu-pujcit" class="container-fluid bg-gradient-2">
+	<div class="row container-xxl m-auto d-grid d-md-flex">
+		<div class="grid-box col-12 col-sm-12 col-md-6 col-lg-6 mt-3 mb-3 mt-md-5 mb-md-5">
+			<div class="card border-0">
 				<div class="card-body">
-					<h2 class="text-white fw-bold text-start">Úvěráček půjčuje...</h2>
+					<h2 class="text-white fw-bold text-center text-md-start">Úvěráček půjčuje...</h2>
+					<div class="section-title-border success-green d-block d-md-none mb-3 mb-md-0"></div>
 					<p class="fw-light text-white text-start">...lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor semper interdum. Donec posuere sodales lectus, eu ornare lacus lobortis non.</p>
 					<div class="row text-left fw-light text-white text-start">
 						<div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-2 mt-sm-2 mt-md-4 d-flex">
@@ -183,8 +188,11 @@
 							<p>Minimální věk 18 let</p>
 						</div>
 					</div>
-					<button type="button" class="btn btn-primary mt-5"><a href="#" class="text-dark">Chci si půjčit</a></button>
-					<button type="button" class="btn btn-light mt-5"><a href="#" class="text-dark">Zavolej mi</a></button>
+					<div class="d-flex justify-content-center justify-content-md-start mt-5">
+						<button type="button" class="btn btn-primary ms-2 me-2"><a href="#" class="text-dark">Chci si půjčit</a></button>
+						<button type="button" class="btn btn-light"><a href="#" class="text-dark fw-bold">Zavolej mi</a></button>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -197,20 +205,83 @@
 </section>
 
 <!--Pomohli jsme získat finance více než 1 000 klientům, kterým banka odmítla půjčit-->
-<section class="container-fluid">
+<section id="zkusenosti" class="container-fluid">
 	<div class="row container-xxl m-auto">
-		<div class="col-12">
-			<h2>Pomohli jsme získat finance více než 1 000 klientům, kterým banka odmítla půjčit</h2>
-
+		<div class="col-12 mt-3 mb-3 mt-md-5 mb-md-5">
+			<h2 class="max-width">Pomohli jsme získat finance <span class="text-secondary fw-bold">více než 1 000 klientům,</span> kterým <span class="text-secondary fw-bold">banka odmítla půjčit</span></h2>
+			<div class="section-title-border success-green mt-3"></div>
 			<section class="splide" aria-label="Splide Basic HTML Example">
-				<div class="splide__track">
+				<div class="splide__track mt-5 mb-5">
 					<ul class="splide__list">
-						<li class="splide__slide">Slide 01</li>
-						<li class="splide__slide">Slide 02</li>
-						<li class="splide__slide">Slide 03</li>
-						<li class="splide__slide">Slide 04</li>
-						<li class="splide__slide">Slide 05</li>
+						<li class="splide__slide">
+							<div class="d-block d-md-flex">
+								<div class="d-block round-image">
+									<img src="assetes/images/profile.png">
+								</div>
+								<div class="text-center text-md-start">
+									<h3 class="fs-5 fw-bold"><span class="text-secondary">Petr V</span></h3>
+									<p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor semper interdum.</p>
+								</div>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="d-block d-md-flex">
+								<div class="d-block round-image">
+									<img src="assetes/images/profile.png">
+								</div>
+								<div class="text-center text-md-start">
+									<h3 class="fs-5 fw-bold"><span class="text-secondary">Petr V</span></h3>
+									<p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor semper interdum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor semper interdum.</p>
+								</div>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="d-block d-md-flex">
+								<div class="d-block round-image">
+									<img src="assetes/images/profile.png">
+								</div>
+								<div class="text-center text-md-start">
+									<h3 class="fs-5 fw-bold"><span class="text-secondary">Petr V</span></h3>
+									<p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor semper interdum.</p>
+								</div>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="d-block d-md-flex">
+								<div class="round-image">
+									<img src="assetes/images/profile.png">
+								</div>
+								<div class="text-center text-md-start">
+									<h3 class="fs-5 fw-bold"><span class="text-secondary">Petr V</span></h3>
+									<p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor semper interdum.</p>
+								</div>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="d-block d-md-flex">
+								<div class="d-block round-image">
+									<img src="assetes/images/profile.png">
+								</div>
+								<div class="text-center text-md-start">
+									<h3 class="fs-5 fw-bold"><span class="text-secondary">Petr V</span></h3>
+									<p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor semper interdum.</p>
+								</div>
+							</div>
+						</li>
+
 					</ul>
+					<div class="m-auto">
+						<div class="splide__arrows d-flex">
+							<button class="splide__arrow splide__arrow--prev">
+								<img src="assetes/images/arrow-prev.svg">
+							</button>
+							<ul class="splide__pagination"></ul>
+							<button class="splide__arrow splide__arrow--next">
+								<img src="assetes/images/arrow-next.svg">
+							</button>
+						</div>
+					</div>
+
 				</div>
 			</section>
 		</div>
@@ -219,10 +290,11 @@
 
 
 <!--FAQ-->
-<section class="container-fluid bg-secondary">
+<section id="dotazy" class="container-fluid bg-gradient-1">
 	<div class="row container-xxl m-auto">
-		<div class="col-12 col-lg-8 offset-lg-2">
-			<h2>Jak úvěráček funguje</h2>
+		<div class="col-12 col-lg-8 offset-lg-2 mt-5">
+			<h2 class="fw-light text-white">Na co se Úvěráčka <span class="fw-bold">nejčastěj ptáte</span></h2>
+			<div class="section-title-border success-green"></div>
 			<div class="accordion accordion-flush mt-5 mb-5 pe-5 ps-5" id="accordionFlushExample">
 				<div class="accordion-item ">
 					<h2 class="accordion-header" id="flush-headingOne">
@@ -294,37 +366,42 @@
 </section>
 
 
-<section class="container-fluid bg-success">
+<section id="kontakty" class="container-fluid bg-success">
 	<div class="row container-xxl m-auto">
-		<h2>Získejte svůj úvěr do 30 minut!</h2>
-		<div class="section-title-border success-primary"></div>
-		<div class="row col-12 col-sm-12 col-md-6 col-lg-6">
-			<div class="card col-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="card-body">
-					<h3>Telefonicky</h3>
-					<p>Zanechte nám na vás kontakt a my se vám ozveme s naší nabídkou.</p>
-					<button type="button" class="btn btn-primary"><a href="#" class="text-dark">Chci si půjčit</a></button>
+		<div class="mt-3 mb-3 mt-md-5 text-center text-md-start">
+			<h2>Získejte svůj úvěr do 30 minut!</h2>
+			<div class="section-title-border-2 secondary"></div>
+		</div>
+
+		<div class="row col-12 col-sm-12  col-lg-6 mb-md-5 m-auto">
+			<div class="d-block d-lg-flex">
+				<div class="card me-0 me-md-2 mb-3 mb-md-0 m-auto">
+					<div class="card-body text-center text-md-start">
+						<p class="fw-bold text-secondary">Telefonicky</p>
+						<p class="fw-light">Zanechte nám na vás kontakt a my se vám ozveme s naší nabídkou.</p>
+						<button type="button" class="btn btn-primary"><a href="#" class="fw-bold text-dark">Chci si půjčit</a></button>
+					</div>
+				</div>
+
+				<div class="card me-0 me-md-2 mb-3 mb-md-0 m-auto">
+					<div class="card-body text-center text-md-start">
+						<p class="fw-bold text-secondary">Telefonicky</p>
+						<p class="fw-light">Zanechte nám na vás kontakt a my se vám ozveme s naší nabídkou.</p>
+						<button type="button" class="btn btn-primary"><a href="#" class="fw-bold text-dark">Chci si půjčit</a></button>
+					</div>
 				</div>
 			</div>
 
-			<div class="card col-12 col-sm-12 col-md-12 col-lg-6">
-				<div class="card-body">
-					<h3>Telefonicky</h3>
-					<p>Zanechte nám na vás kontakt a my se vám ozveme s naší nabídkou.</p>
-					<button type="button" class="btn btn-primary"><a href="#" class="text-dark">Chci si půjčit</a></button>
-				</div>
-			</div>
 
 		</div>
 		<div class="row col-12 col-sm-12 col-md-6 col-lg-6">
-
 		</div>
 	</div>
 </section>
 
 <section class="container-fluid">
 	<div class="row container-xxl m-auto">
-		<div class="card text-start border-0 mt-3 mb-3">
+		<div class="card text-start border-0 mt-5 mb-5">
 			<div class="card-body">
 				<p><span class="fw-bold">Bezúčelová půjčka se splatností minimálně 12 měsíců</span>, maximálně 84 měsíců s výběrem částek od 10.000 Kč do 200.000 Kč se splátkami od 350 Kč měsíčně. Kdykoli v průběhu splácení můžete půjčku doplatit celou a to bez jakýchkoli sankcí. Zaplatíte úroky jen za dobu, kdy jste půjčku čerpali. Můžete si odložit splátky až na 4 měsíce v případě pracovní neschopnosti, nebo finanční tísně. Od půjčky můžete odstoupit do 14 dnů bez udání. </p>
 				<p>Důsledky nedodržení závazků. V případě prodlení nebo jiného neplnění povinností z úvěrové smlouvy je oprávnění po vás požadovat smluvní pokuty a jiné sankce vyplývající z úvěrových smluv a úvěrových podmínek </p>
@@ -420,6 +497,48 @@
 			},
 		}
 	}).mount();
+</script>
+
+<script>
+	$(document).ready(function() {
+		// Najdeme všechny odkazy v navigačním menu
+		var navLinks = $('.navbar-nav a');
+
+		// Přidáme posluchač události kliknutí na každý odkaz v navigačním menu
+		navLinks.on('click', function() {
+			// Odebereme třídu active ze všech odkazů v navigačním menu
+			navLinks.removeClass('active');
+
+			// Přidáme třídu active na kliknutý odkaz
+			$(this).addClass('active');
+		});
+
+		// Získáme pozice jednotlivých sekcí na stránce
+		var sectionPositions = {};
+		$('section').each(function() {
+			var id = $(this).attr('id');
+			sectionPositions[id] = $(this).offset().top;
+		});
+
+		// Přidáme posluchač události skrolování na dokumentu
+		$(document).on('scroll', function() {
+			// Zjistíme, která sekce je právě aktivní
+			var currentSection = '';
+			var currentSectionPosition = $(document).scrollTop() + ($(window).height() / 2);
+			for (var section in sectionPositions) {
+				if (sectionPositions[section] <= currentSectionPosition) {
+					currentSection = section;
+				}
+			}
+
+			// Odebereme třídu active ze všech odkazů v navigačním menu
+			navLinks.removeClass('active');
+
+			// Přidáme třídu active na odkaz, který odpovídá aktuální sekci
+			$('a[href="#' + currentSection + '"]').addClass('active');
+		});
+	});
+
 </script>
 
 </body>
