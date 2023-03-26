@@ -11312,7 +11312,7 @@ section .max-width {
 
 section .button-box {
 	display: flex;
-	margin: 5rem auto;
+	margin: 3rem auto;
 	justify-content: center;
 }
 
@@ -11438,16 +11438,20 @@ img.vaha {
 		max-width: 140px;
 		margin: auto;
 	}
+	header nav .navbar-toggler:focus {
+		box-shadow: none;
+	}
+	header nav .navbar-toggler-icon {
+		font-size: 1rem;
+		border: none;
+		background-image: url("./assetes/images/burger_list_menu.svg");
+	}
 	header nav img {
 		max-height: 23px;
 		top: 12px;
 	}
 	header nav i {
 		font-size: 1rem;
-	}
-	header nav .navbar-toggler-icon {
-		font-size: 1rem;
-		border: none;
 	}
 	.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
 		justify-content: flex-end;
@@ -11457,7 +11461,7 @@ img.vaha {
 		max-width: 65px;
 	}
 	.first-section {
-		margin-top: 59.11px;
+		margin-top: 49px;
 	}
 	.first-section img.wallet {
 		position: relative;
@@ -11481,13 +11485,13 @@ img.vaha {
 	section .splide__pagination__page {
 		width: 11px;
 		height: 11px;
-		margin: 0 10px;
+		margin: 0 4px;
 	}
 	section .splide__pagination__page.is-active {
 		width: 15px;
 		height: 15px;
 	}
-	section button {
+	section button.btn {
 		width: 50%;
 	}
 	.section-title-border-2 {

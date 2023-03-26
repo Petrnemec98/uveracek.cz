@@ -34,7 +34,7 @@ $btn-border-radius: 0px;
 
 html {
   display: block;
-	text-align: center;
+  text-align: center;
 }
 
 body {
@@ -69,48 +69,38 @@ section {
   &.bg-gradient-1 {
 	background: rgb(0, 138, 161);
 	background: linear-gradient(45deg, rgba(0, 138, 161, 1) 0%, rgba(0, 123, 168, 1) 100%);
-  }
-
+  	}
   &.bg-gradient-2 {
 	background: rgb(0, 123, 168);
 	background: linear-gradient(93deg, rgba(0, 123, 168, 1) 0%, rgba(0, 138, 161, 1) 100%);
-
 	.card {
 	  background-color: transparent;
 	}
   }
-
   .circle {
 	width: 75%;
 	max-height: 428px;
 	border-radius: 50%;
 	background-color: #10C3D8;
 	max-width: 428px;
-
 	.vaha {
 	  width: 100%;
 	}
   }
-
   .icon-check {
 	max-height: 30px;
   }
-
   .accordion-header {
 	opacity: 80%;
 	border: none;
   }
-
   .accordion-item {
 	margin-bottom: 2px;
 	color: black;
-
   }
-
   .accordion-body {
 	padding-top: 0;
 	background-color: white;
-
 	> div {
 	  width: 100%;
 	  height: 1px;
@@ -118,27 +108,22 @@ section {
 	  margin-bottom: 1rem;
 	}
   }
-
   .accordion-button {
 	&:focus {
 	  box-shadow: none;
 	}
-
 	&.collapsed {
 	  background-color: #D1E4EC;
 	}
-
 	&:not(.collapsed) {
 	  background-color: white;
 	  color: black;
 	  font-weight: 700;
-
 	  &:after {
 		background-image: var(--bs-accordion-btn-icon);
 	  }
 	}
   }
-
   .round-image {
 	display: inline-block;
 	overflow: hidden;
@@ -147,7 +132,6 @@ section {
 	min-width: 95px;
 	height: 95px;
 	margin-right: 16px;
-
 	img {
 	  display: block;
 	  width: 100%;
@@ -180,7 +164,7 @@ section {
   }
   .button-box{
 	display: flex;
-	margin: 5rem auto;
+	margin: 3rem auto;
 	justify-content: center;
 	button{
 	  margin: 0px 5px;
@@ -311,19 +295,20 @@ img.vaha{
 		  margin: auto;
 		}
 	  }
+	  .navbar-toggler:focus{
+		box-shadow: none;
+	  }
+	  .navbar-toggler-icon{
+		font-size: 1rem;
+		border: none;
+		background-image: url("./assetes/images/burger_list_menu.svg");
+	  }
 	  img{
 		max-height: 23px;
 		top:12px;
 	  }
 	  i{
 		font-size: 1rem;
-	  }
-	  .navbar-toggler{
-
-	  }
-	  .navbar-toggler-icon{
-		font-size: 1rem;
-		border: none;
 	  }
 	}
   }
@@ -338,7 +323,7 @@ img.vaha{
 	}
   }
   .first-section{
-	margin-top: 59.11px;
+	margin-top: 49px;
 	img.wallet{
 	  position: relative;
 	  max-width: 100%;
@@ -362,17 +347,18 @@ img.vaha{
 	  margin: auto;
 	}
 	.splide__pagination__page{
-
 	  width: 11px;
 	  height: 11px;
-	  margin: 0 10px;
+	  margin: 0 4px;
 	  &.is-active{
 		width: 15px;
 		height: 15px;
 	  }
 	}
 	button{
-	  width: 50%;
+	  &.btn{
+		width: 50%;
+	  }
 	}
   }
   .section-title-border-2{

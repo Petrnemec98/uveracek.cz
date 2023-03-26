@@ -23,8 +23,8 @@
 	<nav class="navbar navbar-expand-lg bg-body-tertiary container-xxl">
 		<img class="position-absolute start-0 ms-3" src="assetes/images/color-logo.svg" alt="white-logo" />
 		<div class="container-fluid">
-			<button class="border-0 bg-white fs-2 d-block d-lg-none">
-				<a><i class="fa-solid fa-phone text-secondary me-2 "></i></a>
+			<button class="border-0 bg-white d-block d-lg-none">
+				<a href="tel:+420 888 999 999"><i class="fa-solid fa-phone text-secondary me-2 "></i></a>
 			</button>
 			<button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -61,10 +61,10 @@
 					<a class="nav-link"><p class="text-dark"><i class="fa-solid fa-clock text-secondary me-2"></i>Po - Pá: 8:00 - 17:00</p></a>
 				</li>
 				<li class="nav-item me-5">
-					<a class="nav-link" href="#"><p class="text-dark"><i class="fa-solid fa-envelope text-secondary me-2"></i>mail@uveracek.cz</p></a>
+					<a class="nav-link" href="mailto:mail@uveracek.cz""><p class="text-dark"><i class="fa-solid fa-envelope text-secondary me-2"></i>mail@uveracek.cz</p></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link pe-0" href="#"><p class="text-dark"><i class="fa-solid fa-phone text-secondary me-2 "></i>+420 888 999 999</p></a>
+					<a class="nav-link pe-0" href="tel:+420 888 999 999"><p class="text-dark"><i class="fa-solid fa-phone text-secondary me-2 "></i>+420 888 999 999</p></a>
 				</li>
 			</ul>
 		</div>
@@ -110,10 +110,10 @@
 <section id="jak-to-funguje" class="container-fluid">
 	<div class="row container-xxl m-auto">
 		<div class="card border-0">
-			<div class="card-body mt-3">
+			<div class="card-body mt-5 mt-md-3">
 				<h2 class="fw-bold text-secondary">Jak úvěráček funguje</h2>
 				<div class="section-title-border success-green"></div>
-				<div class="row mt-5 how-works-section">
+				<div class="row mt-3 how-works-section">
 					<div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex d-md-block mb-3 mb-md-0">
 						<img class="position-relative" src="assetes/images/pencil.svg">
 						<div class="ms-4 ms-md-0 text-start text-md-center">
@@ -156,7 +156,7 @@
 <!--Úvěráček půjčuje-->
 <section id="komu-pujcit" class="container-fluid bg-gradient-2">
 	<div class="row container-xxl m-auto d-grid d-md-flex">
-		<div class="grid-box col-12 col-sm-12 col-md-6 col-lg-6 mt-3 mb-3 mt-md-5 mb-md-5">
+		<div class="grid-box col-12 col-sm-12 col-md-6 col-lg-6 mt-5 mb-3 mb-md-5">
 			<div class="card border-0">
 				<div class="card-body">
 					<h2 class="text-white fw-bold text-center text-md-start">Úvěráček půjčuje...</h2>
@@ -198,7 +198,7 @@
 		</div>
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-3 mb-3 mt-md-5 mb-md-5">
 			<div class="d-block w-100 position-relative">
-				<img class="vaha mb-3" src="assetes/images/weighing-machine.svg">
+				<img class="vaha pe-4 ps-4 mb-3" src="assetes/images/weighing-machine.svg">
 			</div>
 		</div>
 	</div>
@@ -207,11 +207,16 @@
 <!--Pomohli jsme získat finance více než 1 000 klientům, kterým banka odmítla půjčit-->
 <section id="zkusenosti" class="container-fluid">
 	<div class="row container-xxl m-auto">
+
 		<div class="col-12 mt-3 mb-3 mt-md-5 mb-md-5">
 			<h2 class="max-width">Pomohli jsme získat finance <span class="text-secondary fw-bold">více než 1 000 klientům,</span> kterým <span class="text-secondary fw-bold">banka odmítla půjčit</span></h2>
 			<div class="section-title-border success-green mt-3"></div>
-			<section class="splide" aria-label="Splide Basic HTML Example">
+			<section class="splide" aria-label="carousel">
 				<div class="splide__track mt-5 mb-5">
+
+					<!-- Button mobile - prev -->
+
+					<!--Položky v carouselu-->
 					<ul class="splide__list">
 						<li class="splide__slide">
 							<div class="d-block d-md-flex">
@@ -268,15 +273,14 @@
 								</div>
 							</div>
 						</li>
-
 					</ul>
 					<div class="m-auto">
 						<div class="splide__arrows d-flex">
-							<button class="splide__arrow splide__arrow--prev">
+							<button class="splide__arrow splide__arrow--prev d-none d-md-block">
 								<img src="assetes/images/arrow-prev.svg">
 							</button>
 							<ul class="splide__pagination"></ul>
-							<button class="splide__arrow splide__arrow--next">
+							<button class="splide__arrow splide__arrow--next d-none d-md-block">
 								<img src="assetes/images/arrow-next.svg">
 							</button>
 						</div>
@@ -295,7 +299,7 @@
 		<div class="col-12 col-lg-8 offset-lg-2 mt-5">
 			<h2 class="fw-light text-white">Na co se Úvěráčka <span class="fw-bold">nejčastěj ptáte</span></h2>
 			<div class="section-title-border success-green"></div>
-			<div class="accordion accordion-flush mt-5 mb-5 pe-5 ps-5" id="accordionFlushExample">
+			<div class="accordion accordion-flush mt-5 mb-5 pe-0 ps-0 pe-md-5 ps-md-5" id="accordionFlushExample">
 				<div class="accordion-item ">
 					<h2 class="accordion-header" id="flush-headingOne">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -369,7 +373,7 @@
 <section id="kontakty" class="container-fluid bg-success">
 	<div class="row container-xxl m-auto">
 		<div class="mt-3 mb-3 mt-md-5 text-center text-md-start">
-			<h2>Získejte svůj úvěr do 30 minut!</h2>
+			<h2 class="fw-bold">Získejte svůj úvěr do 30 minut!</h2>
 			<div class="section-title-border-2 secondary"></div>
 		</div>
 
@@ -402,7 +406,7 @@
 <section class="container-fluid">
 	<div class="row container-xxl m-auto">
 		<div class="card text-start border-0 mt-5 mb-5">
-			<div class="card-body">
+			<div class="card-body fw-light">
 				<p><span class="fw-bold">Bezúčelová půjčka se splatností minimálně 12 měsíců</span>, maximálně 84 měsíců s výběrem částek od 10.000 Kč do 200.000 Kč se splátkami od 350 Kč měsíčně. Kdykoli v průběhu splácení můžete půjčku doplatit celou a to bez jakýchkoli sankcí. Zaplatíte úroky jen za dobu, kdy jste půjčku čerpali. Můžete si odložit splátky až na 4 měsíce v případě pracovní neschopnosti, nebo finanční tísně. Od půjčky můžete odstoupit do 14 dnů bez udání. </p>
 				<p>Důsledky nedodržení závazků. V případě prodlení nebo jiného neplnění povinností z úvěrové smlouvy je oprávnění po vás požadovat smluvní pokuty a jiné sankce vyplývající z úvěrových smluv a úvěrových podmínek </p>
 				</br>
